@@ -1,0 +1,106 @@
+/* Base styles for the page */
+body {
+    font-family: 'Roboto', sans-serif; /* Replace with your preferred Google Font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+    font-size: 16px;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3f58; /* Adjust to fit your color scheme */
+    color: white;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif; /* Replace with your preferred Google Font */
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575c75; /* Adjust to fit your color scheme */
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9fb;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #3a3f58; /* Adjust to fit your color scheme */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3f58; /* Adjust to fit your color scheme */
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}

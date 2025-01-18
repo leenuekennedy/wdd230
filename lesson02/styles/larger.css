@@ -1,0 +1,39 @@
+@media(min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        row-gap: 10px;
+    }
+
+    header {
+        width: 950px;
+        text-align: center;
+    }
+
+    section {
+        max-width: 300px;
+
+    }
+
+    section img {
+        max-width: 300px;
+    }
+
+    #section-3 img {
+
+        max-width: 300px;
+    }
+
+    #section-3 {
+        grid-column: 3/4;
+    }
+
+    footer {
+        width: 950px;
+        text-align: center;
+    }
+
+
+
+}

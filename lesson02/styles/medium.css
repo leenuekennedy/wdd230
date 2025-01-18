@@ -1,0 +1,26 @@
+@media(min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    header {
+        width: 610px;
+        text-align: center;
+    }
+
+    #section-3 {
+        grid-column: 1/3;
+        padding: 10px;
+    }
+
+    #section-3 img {
+        max-width: 500px;
+    }
+
+    footer {
+        width: 610px;
+        text-align: center;
+    }
+}

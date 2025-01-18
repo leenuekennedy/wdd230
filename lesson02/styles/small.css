@@ -1,0 +1,33 @@
+header {
+    background-color: #003049;
+    color: white;
+    border-radius: 10px;
+}
+
+body {
+    max-width: 400px;
+    text-align: center;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+}
+
+section {
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+
+section h3 {
+    background-color: #c0c0c0;
+    padding: 1rem;
+    color: black;
+}
+
+img {
+    max-width: 300px;
+}
+
+footer {
+    background-color: #003049;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}

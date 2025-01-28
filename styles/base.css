@@ -11,9 +11,11 @@ body {
 
 
 header {
-    text-align: center;
+    display: flex;
+    text-align: none;
     padding: 20px;
-    background-color: #3a3f58; /* Adjust to fit your color scheme */
+    background-color: #3a3f58;
+    justify-content: space-between;
     color: white;
 }
 
@@ -104,3 +106,16 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+#hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    #hamburger-menu {
+      display: block;
+    }

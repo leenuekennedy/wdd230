@@ -1,0 +1,72 @@
+/* General Styling */
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #004488;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-family: "Lora", serif;
+    color: #004488;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Color Palette */
+  .color-palette {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .color-swatch {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Wireframe Images */
+  .wireframes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .wireframe img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

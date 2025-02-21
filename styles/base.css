@@ -119,3 +119,23 @@ footer p {
     #hamburger-menu {
       display: block;
     }
+    /*HERO IMG*/
+.hero-container {
+    position: relative;
+  }
+  
+  #hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: black;
+  }

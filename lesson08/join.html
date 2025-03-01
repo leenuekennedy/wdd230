@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce - Supporting Local Businesses">
+    <meta name="author" content="Your Name">
+    
+    <!-- Social Media Meta -->
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 1024px)">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Leenue Chamber of Commerce</h1>
+        <nav>
+            <button class="hamburger">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        
+            <label for="position">Title/Position:</label>
+            <input type="text" id="position" name="position" required pattern="[A-Za-z-\s]{7,}" title="Only letters, hyphens, and spaces allowed. Min 7 characters.">
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="example@business.com">
+        
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="business-name">Business/Organization Name:</label>
+            <input type="text" id="business-name" name="business-name" required>
+        
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership" required>
+                <option value="np">NP Membership (Non-Profit) - Free</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+        
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+        
+            <input type="hidden" id="timestamp" name="timestamp">
+        
+            <button type="submit">Submit Application</button>
+        </form>
+        
+        <script>
+            document.getElementById('timestamp').value = Date.now();
+        </script>
+        <div class="form-container">
+            <div class="form-section">
+                <!-- Form goes here -->
+            </div>
+            <aside class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <div class="membership">
+                    <h3>Non-Profit (NP)</h3>
+                    <p>✅ Free membership for non-profits</p>
+                    <p>✅ Access to community events</p>
+                </div>
+                <div class="membership">
+                    <h3>Bronze</h3>
+                    <p>✅ Listing on the Chamber directory</p>
+                    <p>✅ Discounted event tickets</p>
+                </div>
+                <div class="membership">
+                    <h3>Silver</h3>
+                    <p>✅ All Bronze benefits</p>
+                    <p>✅ Advertising space on the homepage</p>
+                </div>
+                <div class="membership">
+                    <h3>Gold</h3>
+                    <p>✅ All Silver benefits</p>
+                    <p>✅ Priority event sponsorship</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <img src="images/facebook.png">
+        <img src="images/instagram.png">
+        <img src="images/twitter.png" alt="">
+        <p>Contact: info@chamber.com</p>
+        <p>Developed by James Leenue Kennedy | WDD 230 Project</p>
+        <p>Last Modified: <span id="february "></span></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/counter.js" defer></script>
+</body>
+</html>

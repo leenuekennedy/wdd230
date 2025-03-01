@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Member Registration</h2>
+        <form action="record.html" method="get" onsubmit="return validatePasswords()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required 
+                   pattern="[A-Za-z0-9]{8,}" 
+                   title="Password must be at least 8 characters long and contain only letters and numbers.">
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required 
+                   pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" 
+                   title="A valid byui.edu email address.">
+            
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" 
+                   oninput="document.getElementById('rating-value').textContent = this.value">
+            <span id="rating-value">5</span>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Chamber of Commerce</p>
+    </footer>
+    
+    <script>
+        function validatePasswords() {
+            let password = document.getElementById('password').value;
+            let confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                document.getElementById('password').value = '';
+                document.getElementById('confirm-password').value = '';
+                document.getElementById('password').focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

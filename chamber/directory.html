@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce - Supporting Local Businesses">
+    <meta name="author" content="Your Name">
+    
+    
+    <!-- Social Media Meta -->
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 1024px)">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="script src="scripts directory.js defer></script">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Leenue Chamber of Commerce</h1>
+        <nav>
+            <button class="hamburger">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <script>
+            // Fetch JSON data
+            fetch('data/members.json')
+                .then(response => response.json()) // Convert response to JSON
+                .then(data => {
+                    const membersDiv = document.getElementById('members');
+                    
+                    data.members.forEach(member => {
+                        const memberCard = document.createElement('div');
+                        memberCard.innerHTML = `
+                            <h2>${member.name}</h2>
+                            <p>${member.address}</p>
+                            <p>${member.phone}</p>
+                            <a href="${member.website}" target="_blank">Website</a>
+                        `;
+                        membersDiv.appendChild(memberCard);
+                    });
+                })
+                .catch(error => console.error('Error loading JSON:', error));
+        </script>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <img src="images/facebook.png">
+        <img src="images/instagram.png">
+        <img src="images/twitter.png" alt="">
+        <p>Contact: info@chamber.com</p>
+        <p>Developed by James Leenue Kennedy | WDD 230 Project</p>
+        <p>Last Modified: <span id="March "></span></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>

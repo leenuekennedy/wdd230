@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Elite Tech Solutions",
+        "address": "123 Innovation Way, Tech City",
+        "phone": "123-456-7890",
+        "website": "https://www.elitetech.com",
+        "image": "elite-tech.webp",
+        "membership": "Gold",
+        "description": "Providing cutting-edge tech solutions for businesses worldwide."
+    },
+    {
+        "name": "Green Earth Landscaping",
+        "address": "456 Greenway Blvd, Eco Town",
+        "phone": "987-654-3210",
+        "website": "https://www.greenearth.com",
+        "image": "green-earth.webp",
+        "membership": "Silver",
+        "description": "Beautifying the planet, one lawn at a time."
+    },
+    {
+        "name": "Speedy Courier Services",
+        "address": "789 Express Lane, Delivery City",
+        "phone": "456-789-0123",
+        "website": "https://www.speedycourier.com",
+        "image": "speedy-courier.webp",
+        "membership": "Bronze",
+        "description": "Fast and reliable delivery services."
+    },
+    {
+        "name": "Ocean Breeze Resort",
+        "address": "101 Beachside Ave, Paradise Bay",
+        "phone": "321-654-0987",
+        "website": "https://www.oceanbreeze.com",
+        "image": "ocean-breeze.webp",
+        "membership": "Gold",
+        "description": "Luxury stays with breathtaking ocean views."
+    },
+    {
+        "name": "NextGen Auto Repairs",
+        "address": "555 Mechanic St, Auto Town",
+        "phone": "567-890-1234",
+        "website": "https://www.nextgenauto.com",
+        "image": "nextgen-auto.webp",
+        "membership": "Silver",
+        "description": "Expert repairs with next-generation technology."
+    },
+    {
+        "name": "Healthy Bites Café",
+        "address": "789 Wellness St, Food City",
+        "phone": "789-123-4567",
+        "website": "https://www.healthybites.com",
+        "image": "healthy-bites.webp",
+        "membership": "Bronze",
+        "description": "Delicious and healthy meals for a better lifestyle."
+    },
+    {
+        "name": "Skyline Architecture",
+        "address": "222 Design Rd, Skyline City",
+        "phone": "234-567-8901",
+        "website": "https://www.skylinearch.com",
+        "image": "skyline-arch.webp",
+        "membership": "Gold",
+        "description": "Creating stunning city skylines with innovative designs."
+    }
+]

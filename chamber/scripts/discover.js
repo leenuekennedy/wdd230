@@ -1,24 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
+// Visit Tracker using localStorage
+window.onload = () => {
     const visitMessage = document.getElementById("visit-message");
+
+    // Check if it's the user's first visit or they have visited before
     const lastVisit = localStorage.getItem("lastVisit");
-    const now = new Date();
+    const currentTime = new Date().getTime();
 
-    if (!lastVisit) {
-        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        const lastVisitDate = new Date(lastVisit);
-        const timeDifference = now - lastVisitDate;
-        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-        if (daysDifference < 1) {
-            visitMessage.textContent = "Back so soon! Awesome!";
-        } else if (daysDifference === 1) {
-            visitMessage.textContent = `You last visited 1 day ago.`;
+    if (lastVisit) {
+        const timeDifference = currentTime - lastVisit;
+        const daysSinceLastVisit = Math.floor(timeDifference / (1000 * 3600 * 24));
+        if (daysSinceLastVisit > 30) {
+            visitMessage.textContent = `It's been over ${daysSinceLastVisit} days since your last visit. Welcome back!`;
         } else {
-            visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+            visitMessage.textContent = `Welcome back! You last visited ${daysSinceLastVisit} days ago.`;
         }
+    } else {
+        visitMessage.textContent = "Welcome to the Chamber of Commerce! It's your first visit!";
     }
 
-    // Store current visit date in localStorage
-    localStorage.setItem("lastVisit", now);
-});
+    // Update the last visit time in localStorage
+    localStorage.setItem("lastVisit", currentTime);
+};

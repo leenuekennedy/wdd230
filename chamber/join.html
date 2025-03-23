@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Leenue Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://leenuekennedy.github.io/wdd230/chamber/index.html">
+    <meta property="og:url" content="https://leenuekennedy.github.io/wdd230/chamber/index.html">
+    <meta name="author" content="James Leenue Kennedy">
+    <meta name="description" content="Leenue Chamber of Commerce, join us!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Leenue  Chamber of Commerce Site</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img id="img-header" src="images/leenue.png" width="100" alt="Leenue Logo">
+        </div>
+        <h4 id="currentDate"></h4>
+        <div id="mode">
+            <em> Dark Mode</em>🌝
+        </div>
+    </header>
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li><a href="#" title="Join" class="active">Join</a></li>
+        </ul>
+    </nav>
+    <main id=main-join>
+        <aside id="aside-join">
+            <div class="aside">
+                <h2>Non-Profit Membership </h2>
+                <ul>
+                    <li>Basic listing in the chamber's online directory.</li>
+                    <li>Access to networking events and mixers.</li>
+                    <li>Subscription to the chamber's newsletter.</li>
+                    <li>Inclusion in chamber communications and social media posts.</li>
+                </ul>
+                <h2>$100 / Month</h2>
+            </div>
+            <div class="aside">
+                <h2>Bronze Membership</h2>
+                <ul>
+                    <li>Enhanced online directory listing with logo and detailed business description.</li>
+                    <li>Opportunity to submit articles or press releases for inclusion in the chamber's newsletter.</li>
+                    <li>Discounts on chamber events, workshops, and seminars.</li>
+                    <li>Access to basic educational resources or webinars.</li>
+                </ul>
+                <h2>$150 / Month</h2>
+            </div>
+            <div class="aside">
+                <h2>Silver Membership</h2>
+                <ul>
+                    <li>All perks of the bronze level.</li>
+                    <li>Priority placement in the online directory.</li>
+                    <li>Featured profile on the chamber's website or in promotional materials.</li>
+                    <li>Increased visibility through sponsorship opportunities at chamber events.</li>
+                    <li>Access to advanced educational resources, training sessions, or industry-specific workshops.
+                    </li>
+                </ul>
+                <h2>$250 / Month</h2>
+            </div>
+            <div class="aside">
+                <h2>Gold Membership</h2>
+                <ul>
+                    <li>All perks of the silver level.</li>
+                    <li>Exclusive invitations to VIP events or receptions.</li>
+                    <li>Priority access to chamber leadership and opportunities for one-on-one consultations.</li>
+                    <li>Recognition as a major sponsor at chamber events.</li>
+                    <li>Access to premium educational programs and specialized training.</li>
+                    <li>Customized marketing opportunities, such as co-branded promotions or featured articles.</li>
+                </ul>
+                <h2>$400 / Month</h2>
+            </div>
+        </aside>
+        <div id="join-list">
+            <h1>Why you should join us?</h1>
+            <ul>
+                <li>
+                    <h4>Business Connections:</h4>
+                    <p>Leenue Chamber of Commerce(MCC) provide a platform for businesses to connect with each other,
+                        fostering networking opportunities. These connections can lead to partnerships, collaborations, and new
+                        business prospects.</p>
+                </li>
+                <li>
+                    <h4>Community Recognition:</h4>
+                    <p>Being a member of MCC can enhance your business's visibility within the community. It
+                        will add a level of credibility to your brand, showing that you are invested in the local business
+                        environment.</p>
+                </li>
+                <li>
+                    <h4>Voice in Government</h4>
+                    <p>MCC engage in advocacy efforts on behalf of our members. We represent the
+                        interests of businesses in discussions with local, regional, and national government entities, helping
+                        shape policies that affect our business community.
+                    </p>
+                </li>
+                <li>
+                    <h4>Seminars and Workshops</h4>
+                    <p>We frequently organize educational events, seminars, and workshops that provide valuable
+                        information on business trends, best practices, and industry-specific knowledge</p>
+                </li>
+                <li>
+                    <h4>Business Directories</h4>
+                    <p>Take a part in our directory! Our website receive +100k monthly visits!</p>
+                </li>
+                <li>
+                    <h4>Member Benefits</h4>
+                    <p>Access to multiple member benefits(see table)</p>
+                </li>
+            </ul>
+        </div>
+        <h3>Membership Application</h3>
+        <form id="joinForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="businessName">Business Name:</label>
+            <input type="text" id="businessName" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required><br><br>
+
+            <label for="membershipLevel">Membership Level:</label>
+            <select id="membershipLevel">
+                <option value="Non-Profit">Non-Profit</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+            </select><br><br>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById('joinForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const businessName = document.getElementById('businessName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const membershipLevel = document.getElementById('membershipLevel').value;
+
+            // Here you can send data to a server, or store it temporarily
+            alert(`Application Submitted! We will contact you at ${email}.`);
+        });
+    </script>
+
+    </main>
+    <footer>
+        <div id="contact-info">
+            <img id="footer-img" src="images/leenue.png"  width="100" lazy" alt="leenue Logo">
+            <h2>Leenue Chamber of Commerce</h2>
+            <h4>opposite the Ministrial, congo Town</h4>
+            <h4>contact@mtychamber.com</h4>
+            <h4>+(231)776161694</h4>
+
+        </div>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230187.00306399795!2d-100.4679068735161!3d25.649011979312956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sleenue%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1695943508451!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="dev-info">
+            <hr>
+            <p>&copy 2025 Leenue Chamber</p>
+            <p>James Leenue Kennedy</p>
+            <p>WDD230 Project</p>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

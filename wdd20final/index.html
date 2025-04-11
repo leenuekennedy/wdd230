@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>welcome to the Scoots - Home</title>
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+  <div id="messageBanner"></div>
+  <header>
+    <h1>welcome to the Scoots 🛵</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rental.html">Rentals</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section class="hero">
+        <img src="images/free-photo-of-classic-amsterdam-street-scene-with-vintage-car.jpeg" width="300">
+      <h2>Explore Cozumel in Style!</h2>
+      <p><a href="reservation.html" class="cta">Reserve Your Ride</a></p>
+    </section>
+    <section class="rental-summary">
+        <img src="images/free-photo-of-classic-amsterdam-street-scene-with-vintage-car.jpeg" width="300">
+      <h3>Rental Options</h3>
+      <ul>
+        <img src="images/free-photo-of-romantic-couple-enjoying-beachfront-scenery.jpeg" width="300">
+        <li>Scooters (1-2 person)</li>
+        <li>ATVs (4 person)</li>
+        <li>Jeeps (4-5 person)</li>
+      </ul>
+    </section>
+
+    <section class="weather" id="weather">
+      <h3>Current Weather in Cozumel</h3>
+      <p><strong>Main:</strong> <span id="main"></span></p>
+      <p><strong>Description:</strong> <span id="description"></span></p>
+      <p><strong>Temp:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Tomorrow at 3 PM:</strong> <span id="forecast"></span>°C</p>
+      <img id="weather-icon" src="" alt="" />
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a>Follow us on <a href="#">Social Media</a></p>
+            <a href="images/facebook.png"><i class="fab fa-facebook"></i></a>
+            <a href="images/instagram.png"><i class="fab fa-instagram"></i></a>
+            <a href="images/twitter.png"><i class="fab fa-twitter"></i></a>
+          </div>
+    </footer>
+  </main>
+  <script src="weather.js"></script>
+</body>
+</html>

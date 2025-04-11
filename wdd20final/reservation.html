@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scoots - Reservation</title>
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Reserve a Rental</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rental.html">Rentals</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Rental Agreement Info</h2>
+      <ul>
+        <li>$50 security deposit</li>
+        <li>Valid driver's license required</li>
+        <li>No riders under 12 on scooters</li>
+        <li>Unlimited mileage, fuel not included</li>
+        <li>Free delivery for 2+ day rentals</li>
+      </ul>
+    </section>
+
+    <form id="rentalForm">
+      <label>Date: <input type="date" name="date" required /></label>
+      <label>Period: 
+        <select name="period">
+          <option value="half">Half Day</option>
+          <option value="full">Full Day</option>
+        </select>
+      </label>
+      <label>Rental Type: <input type="text" name="rentalType" required /></label>
+      <label>Quantity: <input type="number" name="quantity" min="1" required /></label>
+      <label>Name: <input type="text" name="name" required /></label>
+      <label>Phone: <input type="tel" name="phone" required /></label>
+      <label>Email: <input type="email" name="email" required /></label>
+      <label>Home State/Country: <input type="text" name="location" required /></label>
+      <label>Cruise Line (if applicable): <input type="text" name="cruise" /></label>
+      <label>Special Requests: <textarea name="comments"></textarea></label>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="form.js"></script>
+</body>
+</html>
